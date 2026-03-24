@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --bg-main: #131417;
+  --bg-card: #1e1f26;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.wrapper {
+  width: 50%;
+  height: 50vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
