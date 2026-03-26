@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+.wrapper {
+  min-width: 320px;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper h1::after {
+  content: "";
+  background-color: rgb(26, 26, 145);
+  color: white;
+  /* width: fit-content; */
+  padding: 0.5em;
+  border-radius: 10px;
+  margin-left: 0.2em;
+  animation: change 6s ease infinite;
+}
+
+@keyframes change {
+  0% {
+    content: "Singing";
+  }
+  25% {
+    content: "Praying";
+  }
+  50% {
+    content: "Coding";
+  }
+  75% {
+    content: "Gaming";
+  }
+  100% {
+    content: "Singing";
+  }
+}
