@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --w-flag: 200px;
+  --blue: #0269a6;
+  --yellow: #fecc00;
+}
+.wrapper {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.flag {
+  background-color: var(--blue);
+  height: var(--w-flag);
+  aspect-ratio: 8/5;
+  display: flex;
+  position: relative;
+  /* margin: 2em auto; */
+}
+.flag div {
+  background-color: var(--yellow);
+  height: calc(var(--w-flag) * 1 / 5);
+}
+.flag div:first-child {
+  align-self: center;
+  width: 100%;
+}
+.flag div:last-child {
+  /* align-self: center; */
+  transform: rotate(90deg);
+  width: var(--w-flag);
+  position: absolute;
+  top: calc(var(--w-flag) * 4 / 10);
+}
