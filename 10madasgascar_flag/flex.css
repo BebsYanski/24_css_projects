@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  background-color: #000;
+}
+.wrapper {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.flag {
+  height: 150px;
+  aspect-ratio: 3/2;
+  background-color: #fff;
+  display: flex;
+}
+.flag .white {
+  flex: 1;
+  background-color: #fff;
+}
+.flag .colors {
+  width: 150px;
+  background-color: #ff2;
+}
+.flag .colors .red {
+  background-color: red;
+  height: 50%;
+}
+.flag .colors .green {
+  background-color: green;
+  height: 50%;
+}

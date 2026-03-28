@@ -14,7 +14,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.wrapper h1::after {
+.wrapper h1::after { 
   content: "";
   background-color: rgb(26, 26, 145);
   color: white;
