@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --red: #de0002;
+  --yellow: #ffce00;
+}
+
+.wrapper {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.wrapper .flag {
+  height: 150px;
+  aspect-ratio: 5/3;
+  display: grid;
+}
+
+.flag div:nth-child(1) {
+  background-color: var(--black);
+}
+
+.flag div:nth-child(2) {
+  background-color: var(--red);
+}
+
+.flag div:nth-child(3) {
+  background-color: var(--yellow);
+}
