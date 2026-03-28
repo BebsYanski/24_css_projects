@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --flag-w: 200px;
+}
+.wrapper {
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+.flag {
+  height: var(--flag-w);
+  aspect-ratio: 1;
+  background-color: red;
+  position: relative;
+}
+.flag div {
+  background-color: #fff;
+  width: calc(var(--flag-w) * 5 / 8);
+  height: calc(var(--flag-w) * 3 / 16);
+  /* aspect-ratio: 2/9; */
+  position: absolute;
+}
+.flag .vertical {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.flag .horizontal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  /* transform: rotate(90deg); */
+}
