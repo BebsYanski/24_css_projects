@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --w-flag: 200px;
+}
+.wrapper {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+.flag {
+  background-color: #fff;
+  height: var(--w-flag);
+  aspect-ratio: 5/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flag div {
+  width: calc(var(--w-flag) * 3 / 5);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #bc022c;
+}
