@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --h-flag: 200px;
+}
+.wrapper {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+.flag {
+  height: var(--h-flag);
+  aspect-ratio: 7/6;
+  background-color: #fff;
+  display: grid;
+}
+.flag .stripes:nth-child(1) {
+  background-color: orangered;
+}
+.flag .stripes:nth-child(2) {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flag .stripes:nth-child(3) {
+  background-color: green;
+}
+.flag .circle {
+  background-color: orangered;
+  height: 85%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
