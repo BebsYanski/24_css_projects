@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 body {
   color: #c9d1d9;
   background-color: #000;
+  font-family: var(--font-main);
 }
 :root {
   --font-main: "Noto Sans", sans-serif;
@@ -23,4 +24,67 @@ body {
   --btn-bg-hover: #30363d;
   --btn-boder: #373b43;
   --btn-border-hover: #8c949e;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+header {
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  border: 1px solid var(--profile-img-border);
+}
+header img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.wrapper {
+  padding: 2em;
+  min-height: 100vh;
+  min-width: 320px;
+}
+.card {
+  margin: auto;
+  width: 80%;
+  max-width: 400px;
+  min-width: 250px;
+  padding: 1em;
+  background-color: var(--profile-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+main {
+  margin-top: 0.5em;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h4 {
+  color: var(--username-font-color);
+  font-weight: var(--username-font-weight);
+}
+p {
+  margin-top: 1em;
+}
+button {
+  width: 100%;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-boder);
+  margin-top: 0.5em;
+  padding: 0.3em;
+  transition: all 0.8s;
+  font-family: inherit;
+  border-radius: 5px;
+}
+button:hover {
+  border-color: var(--btn-border-hover);
+  background: var(--btn-bg-hover);
 }
